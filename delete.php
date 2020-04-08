@@ -12,7 +12,7 @@
 			echo"Database connect unsuccessfully!";
 		}
 
-		$sql = "DELETE FROM test";
+		$sql = "DELETE FROM test WHERE servername = 'localhost'";
 		$status = $conn->query($sql);
 
 		if($status){
@@ -30,7 +30,7 @@
 	<title></title>
 </head>
 <body>
-<a href="test.php">Go back to test</a>
+<a href="index.html">Go back to test</a>
 </body>
 </html>
 	
