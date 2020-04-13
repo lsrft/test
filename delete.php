@@ -12,7 +12,7 @@
 			echo"Database connect unsuccessfully!";
 		}
 
-		$sql = "DELETE FROM test WHERE servername = 'localhost'";
+		$sql = "DELETE FROM test ";
 		$status = $conn->query($sql);
 
 		if($status){
